@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input check</title>
+    <style>
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        width: 800px;
+    }
+    form :has(label, input) {
+        display: block;
+    }
+    #warning {
+        color: red;
+        margin-left: 10px;
+    }
+    input {
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    </style>
+</head>
+<body>
+    <form>
+    <label for="password">Password (min 6 characters):</label>
+    <input id="password" placeholder="Password" type="password" />
+    <div id="warning"></div>
+    <label for="confirm-password">Confirm password</label>
+    <input id="confirm-password" placeholder="Password" type="password" />
+    </form>
+    <script>
+
+    </script>
+</body>
+</html>

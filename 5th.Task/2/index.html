@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flags</title>
+</head>
+<body>
+    <select id="flagSelect" onchange="myFunction()">
+        <option value="Jordan" defult>Jordan</option>
+        <option value="Palestine">Palestine</option>
+    </select>
+    <br>
+    <img id="img" src="Jordan.png" height="100px">
+
+    <script>
+function myFunction() {
+    var x = document.getElementById("flagSelect").value;
+if(x=="Jordan"){
+    document.getElementById("img").src = "Jordan.png";
+}
+else if(x=="Palestine"){
+    document.getElementById("img").src = "Palestine.png";
+
+}
+}
+</script>
+
+</body>
+</html>

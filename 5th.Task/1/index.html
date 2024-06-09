@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event </title>
+    <style>
+        #myText{
+            display: inline-block;
+            padding: 10px;
+            background-color: rgb(218, 229, 5);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="myText">Hello World !</p>
+
+
+    <script>
+const textElement = document.getElementById("myText");
+
+textElement.addEventListener("mouseover", function() {
+this.textContent = "Can I help you?";
+});
+
+textElement.addEventListener("mouseout", function() {
+this.textContent = "Hello World !"; 
+});
+
+    </script>
+</body>
+</html>
